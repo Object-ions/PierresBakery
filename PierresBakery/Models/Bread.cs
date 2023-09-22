@@ -13,6 +13,7 @@ namespace PierresBakery.Models
     public static int NumberTest(int userInput)
     {
       int returnedNumber = 1 + userInput;
+
       return returnedNumber;
     }
   }
