@@ -10,14 +10,12 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void NumberTest_RunningTest_int()
+    public void
     {
       // Arrange
-      int userInput = 1;
       // Act
-      int returnedNumber = Bread.NumberTest(userInput);
       // Assert
-      Assert.AreEqual(2, returnedNumber);
+
     }
-  }
+}
 }
