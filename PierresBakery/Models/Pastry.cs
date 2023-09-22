@@ -4,12 +4,12 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    public static int pastryPrice = 2;
-    public static int discountEvery = 4;
+    public static int PastryPrice { get; set; } = 2;
+    public static int discountEvery { get; set; } = 4;
     public static int CalcCost(int userInput)
     {
       int pastriesToPay = userInput - (userInput / discountEvery);
-      int costOfPastry = pastryPrice * pastriesToPay;
+      int costOfPastry = PastryPrice * pastriesToPay;
 
       return costOfPastry;
     }
