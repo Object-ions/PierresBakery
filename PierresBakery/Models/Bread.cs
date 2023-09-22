@@ -7,7 +7,7 @@ namespace PierresBakery.Models
     public static int breadPrice = 5;
     public static int CalcCost(int userInput)
     {
-      int costOfBread = 1 + userInput;
+      int costOfBread = breadPrice * userInput;
 
       return costOfBread;
     }

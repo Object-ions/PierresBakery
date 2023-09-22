@@ -10,14 +10,14 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void CalcCost_CalcCostOfBreadLoaves_int(int amountOfLoaves)
+    public void CalcCost_CalcCostOfBreadLoaves_int()
     {
       // Arrange
       int userInput = 1;
       // Act
-      int returnedNumber = Bread.NumberTest(userInput);
+      int expectedReturn = Bread.CalcCost(userInput);
       // Assert
-      Assert.AreEqual(2, returnedNumber);
+      Assert.AreEqual(5, expectedReturn);
     }
   }
 }
