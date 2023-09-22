@@ -11,7 +11,8 @@ namespace PierresBakery.Models
       if (userInput % 3 == 0)
       {
         // special price
-        costOfBread = breadPrice * 2;
+        int loavesToPay = userInput - (userInput / 3);
+        costOfBread = breadPrice * loavesToPay;
       }
       else
       {

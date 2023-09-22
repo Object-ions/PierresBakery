@@ -23,9 +23,9 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void CalcCost_CalcCostOfBreadLoaves_bool()
     {
-      int userInput = 3;
+      int userInput = 50;
       int expectedReturn = Bread.CalcCost(userInput);
-      Assert.AreEqual(10, expectedReturn);
+      Assert.AreEqual(170, expectedReturn);
     }
   }
 }
