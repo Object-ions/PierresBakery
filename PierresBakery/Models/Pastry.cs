@@ -1,21 +1,17 @@
-// using System.Data.Common;
-// using System.Reflection.Metadata.Ecma335;
-// using System.Runtime.CompilerServices;
-// using System.Collections.Generic;
-// using System.Linq;
-// using System.Windows.Markup;
-// using System;
+using System;
 
-// namespace PierresBakery.Models
-// {
-//   public class Pastry
-//   {
-//     public static int NumberTest(int userInput)
-//     {
-//       int returnedNumber = 1 + userInput;
+namespace PierresBakery.Models
+{
+  public class Pastry
+  {
+    public static int pastryPrice = 2;
+    public static int discountEvery = 4;
+    public static int CalcCost(int userInput)
+    {
+      int pastriesToPay = userInput - (userInput / discountEvery);
+      int costOfPastry = pastryPrice * pastriesToPay;
 
-//       return returnedNumber;
-//     }
-//   }
-// }
-
+      return costOfPastry;
+    }
+  }
+}

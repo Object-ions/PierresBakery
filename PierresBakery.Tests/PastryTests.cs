@@ -1,23 +1,36 @@
-// // using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using System.Collections.Generic;
-// using PierresBakery.Models;
-// using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using PierresBakery.Models;
+using System;
 
-// namespace PierresBakery.Tests
-// {
+namespace PierresBakery.Tests
+{
 
-//   [TestClass]
-//   public class BreadTests
-//   {
-//     [TestMethod]
-//     public void NumberTest_RunningTest_int()
-//     {
-//       // Arrange
-//       int userInput = 1;
-//       // Act
-//       int returnedNumber = Bread.NumberTest(userInput);
-//       // Assert
-//       Assert.AreEqual(2, returnedNumber);
-//     }
-//   }
-// }
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void CalcCost_CalcCostOfPastry_1Pastries_int()
+    {
+      int userInput = 1;
+      int expectedReturn = Pastry.CalcCost(userInput);
+      Assert.AreEqual(2, expectedReturn);
+    }
+
+    [TestMethod]
+    public void CalcCost_CalcCostOfPastry_7Pastries_int()
+    {
+      int userInput = 7;
+      int expectedReturn = Pastry.CalcCost(userInput);
+      Assert.AreEqual(12, expectedReturn);
+    }
+
+    [TestMethod]
+    public void CalcCost_CalcCostOfPastry_8Pastries_int()
+    {
+      int userInput = 8;
+      int expectedReturn = Pastry.CalcCost(userInput);
+      Assert.AreEqual(12, expectedReturn);
+    }
+  }
+}
