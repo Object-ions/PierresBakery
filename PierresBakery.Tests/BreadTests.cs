@@ -10,7 +10,7 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void NumberTest_RunningTest_int()
+    public void CalcCost_CalcCostOfBreadLoaves_int(int amountOfLoaves)
     {
       // Arrange
       int userInput = 1;
