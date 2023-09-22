@@ -1,4 +1,4 @@
-// using Microsoft.VisualStudio.TestTools.UnitTesting;
+// // using Microsoft.VisualStudio.TestTools.UnitTesting;
 // using System.Collections.Generic;
 // using PierresBakery.Models;
 // using System;
@@ -7,18 +7,17 @@
 // {
 
 //   [TestClass]
-//   public class PastryTests
+//   public class BreadTests
 //   {
 //     [TestMethod]
-//     public void
+//     public void NumberTest_RunningTest_int()
 //     {
-
-// 	// GetSide1_ReturnsSide1_Int()
-
 //       // Arrange
+//       int userInput = 1;
 //       // Act
+//       int returnedNumber = Bread.NumberTest(userInput);
 //       // Assert
-
+//       Assert.AreEqual(2, returnedNumber);
 //     }
 //   }
 // }
