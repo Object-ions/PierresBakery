@@ -10,15 +10,15 @@ namespace PierresBakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void
+    public void NumberTest_TestingRun_int()
     {
-
-	// GetSide1_ReturnsSide1_Int()
-      
       // Arrange
+      int userInput = 9;
       // Act
+      char[] output = ScoreCalculator.WordToCharArray(userInput);
+      int testint = ;
       // Assert
-
+      CollectionAssert.AreEqual(testArray, output);
     }
-}
+  }
 }
