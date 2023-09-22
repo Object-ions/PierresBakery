@@ -7,18 +7,8 @@ namespace PierresBakery.Models
     public static int breadPrice = 5;
     public static int CalcCost(int userInput)
     {
-      int costOfBread = 0;
-      if (userInput % 3 == 0)
-      {
-        // special price
-        int loavesToPay = userInput - (userInput / 3);
-        costOfBread = breadPrice * loavesToPay;
-      }
-      else
-      {
-        // regular price
-        costOfBread = breadPrice * userInput;
-      }
+      int loavesToPay = userInput - (userInput / 3);
+      int costOfBread = breadPrice * loavesToPay;
 
       return costOfBread;
     }
