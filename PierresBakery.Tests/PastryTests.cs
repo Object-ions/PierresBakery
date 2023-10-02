@@ -32,6 +32,15 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void DiscountEvery_GetSetNewValuesDiscountEvery_Int()
+    {
+      Pastry.DiscountEvery = 5;
+      int newDiscount = Pastry.DiscountEvery;
+      Assert.AreEqual(5, newDiscount);
+      Pastry.DiscountEvery = 4;
+    }
+
+    [TestMethod]
     public void CalcCost_CalcCostOfPastry_1Pastries_int()
     {
       int userInput = 1;
