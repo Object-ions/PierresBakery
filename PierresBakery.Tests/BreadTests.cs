@@ -25,6 +25,13 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void DiscountEvery_ReturnsDefaultDiscountEvery_Int()
+    {
+      int defaultDiscount = Bread.DiscountEvery;
+      Assert.AreEqual(3, defaultDiscount);
+    }
+
+    [TestMethod]
     public void BreadPrice_GetSetNewValuesBreadPrice_Int()
     {
       Bread.BreadPrice = 12;
