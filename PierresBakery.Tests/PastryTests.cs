@@ -25,6 +25,13 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void DiscountEvery_ReturnsDefaultDiscountEvery_Int()
+    {
+      int defaultDiscount = Pastry.DiscountEvery;
+      Assert.AreEqual(4, defaultDiscount);
+    }
+
+    [TestMethod]
     public void CalcCost_CalcCostOfPastry_1Pastries_int()
     {
       int userInput = 1;
