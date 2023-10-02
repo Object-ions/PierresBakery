@@ -18,6 +18,13 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void BreadPrice_ReturnsDefaultBreadPrice_Int()
+    {
+      int defaultPrice = Bread.BreadPrice;
+      Assert.AreEqual(5, defaultPrice);
+    }
+
+    [TestMethod]
     public void CalcCost_CalcCostOfBreadLoaves_1Loaves_int()
     {
       int userInput = 1;
