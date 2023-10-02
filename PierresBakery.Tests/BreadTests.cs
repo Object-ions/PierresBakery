@@ -25,6 +25,15 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void BreadPrice_GetSetNewValuesBreadPrice_Int()
+    {
+      Bread.BreadPrice = 12;
+      int newPrice = Bread.BreadPrice;
+      Assert.AreEqual(12, newPrice);
+      Bread.BreadPrice = 5;
+    }
+
+    [TestMethod]
     public void CalcCost_CalcCostOfBreadLoaves_1Loaves_int()
     {
       int userInput = 1;
