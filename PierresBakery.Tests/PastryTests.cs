@@ -10,6 +10,14 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
     [TestMethod]
+    public void CalcCost_ReturnsDataType_Int()
+    {
+      int userInput = 1;
+      var result = Pastry.CalcCost(userInput);
+      Assert.IsInstanceOfType(result, typeof(int));
+    }
+
+    [TestMethod]
     public void CalcCost_CalcCostOfPastry_1Pastries_int()
     {
       int userInput = 1;
